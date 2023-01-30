@@ -18,32 +18,22 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
-# Link Hosting Kalian Untuk Ssh Vpn
+
 akbarvpn="raw.githubusercontent.com/PixerJason/cfnfree/main/ssh"
-# Link Hosting Kalian Untuk Sstp
 akbarvpnn="raw.githubusercontent.com/PixerJason/cfnfree/main/sstp"
-# Link Hosting Kalian Untuk Ssr
 akbarvpnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/ssr"
-# Link Hosting Kalian Untuk Shadowsocks
 akbarvpnnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/shadowsocks"
-# Link Hosting Kalian Untuk Wireguard
 akbarvpnnnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/wireguard"
-# Link Hosting Kalian Untuk Xray
 akbarvpnnnnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/xray"
-# Link Hosting Kalian Untuk Ipsec
 akbarvpnnnnnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/ipsec"
-# Link Hosting Kalian Untuk Backup
 akbarvpnnnnnnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/backup"
-# Link Hosting Kalian Untuk Websocket
 akbarvpnnnnnnnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/websocket"
-# Link Hosting Kalian Untuk Ohp
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/ohp"
-# link Hosting update
 akbarvpnnnnnnnnnnn="raw.githubusercontent.com/PixerJason/cfnfree/main/update"
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/lizsvr/cfnfree/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/PixerJason/cfnfree/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
